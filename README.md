@@ -4,12 +4,12 @@ Set up a Python Lambda that executes remote code on an EC2. Use the boto3 librar
 
 # Prerequisite
 
-Make the IAM role for the service EC2 with the permission of AmazonSSMManagedInstanceCore
+1. Make the IAM role for the service EC2 with the permission of AmazonSSMManagedInstanceCore
 
-Create the EC2 instance (ubuntu 18.04-amd64-server) and attached to the above role
+2. Create the EC2 instance (ubuntu 18.04-amd64-server) and attached to the above role
 
-Make another role for lambda with permissions of AmazonEC2FullAccess , AmazonSSMFullAccess and AWSLambdaExecute
+3. Make another role for lambda with permissions of AmazonEC2FullAccess , AmazonSSMFullAccess and AWSLambdaExecute
 
-Create the lambda function and attached the existing role with that
+4. Create the lambda function and attached the existing role with that
 
-Paste the python script in lamda function code
+5. Paste the python script in lamda function code
